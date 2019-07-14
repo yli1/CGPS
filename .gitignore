@@ -1,0 +1,6 @@
+*.pyc
+.idea
+__pycache__
+logs
+sanity*
+SCAN
