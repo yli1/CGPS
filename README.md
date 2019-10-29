@@ -1,3 +1,9 @@
+## Related Materials
+
+- Li, Yuanpeng, et al. "[Compositional Generalization for Primitive Substitutions.](https://arxiv.org/pdf/1910.02612.pdf)" EMNLP (2019).
+- Li, Yuanpeng, et al. "[Insights for compositional generalizations.](http://bit.ly/2ON8eg2)" (2019)
+- [Poster](http://bit.ly/347VdC6)
+
 ## Requirements
 ### Dependencies
 The code needs TensorFlow and other requirements.
