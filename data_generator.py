@@ -1,15 +1,15 @@
 def get_data_generator(name, args):
     if name == 'fewshot':
-        return FewShotDataGanerator(args)
+        return FewShotDataGenerator(args)
     elif name == 'scan':
-        return SCANGanerator(args)
+        return SCANGenerator(args)
     elif name == 'toy':
-        return ToyDataGanerator(args)
+        return ToyDataGenerator(args)
     else:
         raise ValueError("Data generator name is not defined: " + name)
 
 
-class FewShotDataGanerator(object):
+class FewShotDataGenerator(object):
     def __init__(self, args):
         self.args = args
 
@@ -74,7 +74,7 @@ class FewShotDataGanerator(object):
         return X, Y
 
 
-class ToyDataGanerator(object):
+class ToyDataGenerator(object):
     def __init__(self, args):
         self.args = args
 
@@ -107,7 +107,7 @@ class ToyDataGanerator(object):
         return X, Y
 
 
-class SCANGanerator(object):
+class SCANGenerator(object):
     def __init__(self, args):
         self.args = args
 
@@ -129,7 +129,7 @@ class SCANGanerator(object):
         return self.load(self.args.test_file)
 
 
-class Formarter(object):
+class Tokenizer(object):
     def __init__(self, args):
         self.args = args
 

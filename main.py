@@ -4,7 +4,7 @@ import editdistance
 import os
 import numpy as np
 
-from data_generator import Formarter
+from data_generator import Tokenizer
 from data_generator import get_data_generator
 from model import get_model
 
@@ -73,9 +73,9 @@ def process(args):
 
     ori_test_X, ori_test_Y = test_X, test_Y
 
-    # change format
-    formater = Formarter(args)
-    samples, dicts, lengths, maxs = formater.initialize(
+    # Tokenize
+    tokenizer = Tokenizer(args)
+    samples, dicts, lengths, maxs = tokenizer.initialize(
         train_X, train_Y, test_X, test_Y)
     train_X, train_Y, test_X, test_Y = samples
     voc, act = dicts
