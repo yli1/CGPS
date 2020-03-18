@@ -18,6 +18,8 @@ git clone https://github.com/brendenlake/SCAN.git
 ```
 
 ## Main Experiments
+We found better hyper-parameters after the paper submission, so that the results should be higher than those in the paper.
+
 Please fix CUDA_VISIBLE_DEVICES in the scrips.
 
 SCAN Primitive Tasks
